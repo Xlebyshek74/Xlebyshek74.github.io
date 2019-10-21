@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Тестовое задание</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center enter">Тестовое задание</h2>
+      </div>
+      <hr>
+      <div class="row col-md-12 enter">
+        <div class="col-md-3"><img alt="" src="img/ava.jpg" /></div>
+        <div class="col-md-9">
+          <address style="font-size:18px;">
+            <h4 name="top">Константин Твердохлеб</h4>
+            <b>Адрес: </b>Челябинск<br/>
+            <b>ВУЗ: </b>ЧелГУ<br/>
+            <b>Курс: </b>4<br/>
+            <b>Опыт работы: </b>Нет<br />
+            <b>Тел:</b> +79514607975
+          </address>
+        </div>
+      </div>
+
+      <div class="col-md-12 enter">
+        <h3 class="text-left">
+          Знание языков
+        </h3>
+        <table class="table table-bordered">
+          <thead>
+            <th scope="col"></th>
+            <th scope="col">JS</th>
+            <th scope="col">PHP</th>
+            <th scope="col">SQL</th>
+            <th scope="col">Python</th>
+            <th scope="col">C++</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td> Отличное владение</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="table-warning">✔</td>
+            </tr>
+            <tr>
+              <td> Хорошее владение</td>
+              <td></td>
+              <td class="table-warning">✔</td>
+              <td></td>
+              <td class="table-warning">✔</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td> Среднее владение</td>
+              <td></td>
+              <td></td>
+              <td class="table-warning">✔</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td> Плохое владение</td>
+              <td class="table-warning">✔</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>
+            Телефон:
+          </label>
+          <input type="input" class="form-control" id="exampleInputEmail1" placeholder="Ваш телефон" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+
+          <label for="exampleInputEmail1">
+            Email:
+          </label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш Email" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+    <a href="javascript:Spoiler();" class="link_spoiler enter" id="linkSpoiler" style="font-size:18px;color:#444">Кликните сюда, чтобы узнать меня подробнее</a>
+    <div id="contentSpoiler" style="display: none; font-size:18px;" class="enter">
+  	<p>Еще в школе заинтересовался веб-программированием, изучил HTML и CSS. Потом в универе начал изучать PHP и Python, был опыт
+    в разработке веб-приложения на фреймворке Yii2. Также в универе изучал C++ и учавствовал в спортивном программировании.
+    Всегда интересовала Frontend разработка. Хотел бы записаться на курс для изучения новых знаний в этой сфере.</p>
+  </div>
+  </div>
+  </div>
+
+</body>
+<script>
+function Spoiler() {
+	var ele = document.getElementById("contentSpoiler");
+	var text = document.getElementById("linkSpoiler");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "Кликните сюда, чтобы узнать меня подробнее";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "Скрыть";
+	}
+}
+</script>
+</html>
